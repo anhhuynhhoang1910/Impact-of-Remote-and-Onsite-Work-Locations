@@ -1,5 +1,4 @@
 # Impact-of-Remote-and-Onsite-Work-Locations
-# 🧠 Impact of Remote Work on Mental Health - Data Analysis Project
 
 ## 📌 Project Overview
 This project analyzes the impact of different work models (Remote, Onsite, and Hybrid) on employee mental health, stress levels, and work-life balance. 
