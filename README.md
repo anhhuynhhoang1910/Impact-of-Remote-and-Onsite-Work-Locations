@@ -14,7 +14,7 @@ The primary goal is to uncover actionable insights by processing raw data using 
 
 ## 📂 Repository Structure
 * **`Impact_of_Remote_Work_on_Mental_Health.csv`**: The raw dataset containing detailed employee records (Age, Gender, Job Role, Hours Worked, Stress Level, Mental Health Condition, etc.).
-* **`SQL_Script.sql`**: The SQL script used to clean, categorize, and aggregate the data. It includes queries to:
+* **`SQL Code Remote&Onsite Project`**: The SQL script used to clean, categorize, and aggregate the data. It includes queries to:
   * Count the number of employees by work location.
   * Calculate the percentage of stress levels (High, Medium, Low) across Remote and Onsite models.
   * Compute average working hours, work-life balance ratings, and social isolation ratings.
@@ -26,20 +26,22 @@ The primary goal is to uncover actionable insights by processing raw data using 
 * **`remoteandonsite.pbix`**: The interactive Power BI Dashboard containing visual reports, slicers, and dynamic charts for deep-dive analysis.
 
 ## 💡 Key Insights & Findings
+<img width="1117" height="627" alt="Dashboard_Remote Onsite_PowerBI" src="https://github.com/user-attachments/assets/962e2724-c810-46bf-b706-deaffee70e25" />
+<img width="1473" height="689" alt="Dashboard_Remote Onsite_GoogleSheets" src="https://github.com/user-attachments/assets/6c676d06-3419-4a70-82a1-272d3d2e1587" />
+
+
 The data analysis revealed several significant trends regarding how different work environments affect employee well-being:
 
-### 1. Stress Level Disparities (Remote vs. Onsite)
-* **High Stress:** The data shows that **11.8%** of the total workforce consists of Remote employees reporting a "High" stress level, compared to **10.7%** for Onsite employees. 
-* **Low & Medium Stress:** On the positive side, Remote employees make up **22.48%** of the total workforce maintaining healthy stress levels (**11.54%** Medium and **10.94%** Low).
+## 💡 Key Insights & Findings
+Based on the analysis of the SQL outputs and the interactive dashboards, several significant trends emerged regarding how different work environments affect employee well-being:
 
-### 2. Work-Life Balance & Working Hours
-* On average, Remote employees work **39.45 hours/week** with a Work-Life Balance rating of **2.98/5.0**. 
-* In contrast, Onsite employees average **39.82 hours/week** with a balance rating of **2.95/5.0**. 
-* **Takeaway:** Despite working slightly shorter hours, Remote employees report a marginally better work-life balance, highlighting the value of locational flexibility.
+### 1. Stress Level Distribution (Remote vs. Onsite)
+* **Remote Workforce:** Employees working remotely report the highest proportion of "High" stress (**34.42%**), while "Low" stress accounts for the smallest segment in this group (**31.91%**).
+* **Onsite Workforce:** Conversely, the onsite work environment shows a healthier distribution. "Low" stress makes up the largest proportion (**33.90%**), and "High" stress is the lowest (**32.68%**).
+* **Takeaway:** Within this dataset, full-time remote work is associated with a higher concentration of high-stress levels compared to the traditional onsite environment.
 
-### 3. Social Isolation
-* Contrary to common assumptions regarding remote work, the Social Isolation Rating for Remote workers averages **2.96/5.0**, which is slightly lower than the Onsite employees' average of **3.01/5.0**. This indicates that the physical office environment in this dataset does not necessarily prevent feelings of isolation.
-
-### 4. Job Role Specific Impacts
-* According to the role-based breakdown, **Software Engineers** benefit the most from Remote work, scoring the highest average work-life balance (**3.23/5.0**).
-* However, **Sales** professionals show the best well-being metrics when working Onsite, leading with a work-life balance score of **3.07/5.0**, likely due to the highly interactive and communicative nature of their roles.
+### 2. Work-Life Balance (WLB) Disparities by Job Role
+The impact of the work location on Work-Life Balance heavily depends on the nature of the job:
+* **Independent Roles Thrive Remotely:** **Software Engineers** achieve the highest WLB score when working remotely (**3.23/5.0**), followed by Data Scientists (3.02) and Designers (3.00). However, when working onsite, the WLB score for Software Engineers drops significantly to 2.91.
+* **Collaborative Roles Thrive Onsite:** Roles requiring constant interaction perform better in the office. **Sales** and **Marketing** lead the onsite WLB scores (3.07 and 3.04, respectively). Notably, when forced to work remotely, the Marketing department's WLB drops to the lowest across the entire company (**2.72/5.0**).
+* **Takeaway:** Tech and design roles benefit greatly from the deep focus provided by remote work, whereas collaborative and communicative roles require the physical office environment to maintain a healthy work-life balance.
